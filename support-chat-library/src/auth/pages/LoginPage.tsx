@@ -1,5 +1,7 @@
+import { Link } from "react-router"
 
 import { cn } from "@/lib/utils"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -68,9 +70,9 @@ export function LoginPage({ className, ...props }: React.ComponentProps<"div">) 
               </div>
               <div className="text-center text-sm">
                 Don&apos;t have an account?{" "}
-                <a href="#" className="underline underline-offset-4">
+                <Link to="/auth/register" className="underline underline-offset-4">
                   Sign up
-                </a>
+                </Link>
               </div>
             </div>
           </form>
